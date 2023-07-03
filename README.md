@@ -1,2 +1,2 @@
 # web-shop-app
-Diploma Project
+University diploma project
