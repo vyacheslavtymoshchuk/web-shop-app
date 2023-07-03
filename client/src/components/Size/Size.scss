@@ -1,0 +1,35 @@
+.size-selector__pane {
+  position: absolute;
+  top: calc(100% + 1px);
+  right: -1px;
+  left: -1px;
+  overflow: auto;
+  max-height: 252px;
+  border-radius: 20px;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  z-index: 10;
+
+  .size-selector__option:first-child {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+  }
+
+  .size-selector__option.selected {
+    background: #eee;
+  }
+
+  .size-selector__option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.25rem;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 14px;
+
+    .side-sizes__title {
+      min-width: 3.125rem;
+    }
+  }
+}

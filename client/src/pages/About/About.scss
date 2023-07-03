@@ -1,0 +1,121 @@
+.about__container {
+  display: flex;
+  flex-grow: 1;
+
+  .about__sideLeft {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    width: 10%;
+    min-width: 11.5rem;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+
+    .aboutSide {
+      padding-top: 1.5625rem;
+    }
+
+    .about__sideContent {
+      position: sticky;
+      top: 0;
+      pointer-events: all;
+
+      .aboutSide__top {
+        display: flex;
+        align-items: center;
+        height: 3.75rem;
+        margin-bottom: 1.875rem;
+      }
+    }
+  }
+
+  .about__main {
+    flex: 1;
+    min-width: 0;
+
+    .about__text-content {
+    }
+
+    .page-text {
+      padding-top: 6.1875rem;
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+      padding-bottom: 5px;
+      font-size: 14px;
+
+      h1 {
+        margin-bottom: 1em;
+        margin: 0 0 1.625em;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        line-height: 1.1333333333;
+        font-weight: 400;
+      }
+
+      .about__com {
+        max-width: 809px;
+
+        p {
+          margin: 0 0 0.6em;
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+          border-style: none;
+        }
+      }
+    }
+  }
+
+  .about__sideRight {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 16.6666666667%;
+    min-width: 10.3125rem;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+    text-align: right;
+
+    .aboutSide {
+      padding-top: 21px !important;
+    }
+
+    .about__sideContent {
+      position: sticky;
+      top: 0;
+      pointer-events: all;
+
+      .aboutSide__content {
+        .aboutSide__top {
+          display: flex;
+          align-items: center;
+          height: 3.75rem;
+          margin-bottom: 1.875rem;
+        }
+      }
+    }
+
+    .aboutSide__top {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .about__container {
+    display: flex;
+    flex-grow: 1;
+
+    .about__sideLeft {
+      display: none;
+    }
+
+    .about__sideRight {
+      display: none;
+    }
+  }
+}
